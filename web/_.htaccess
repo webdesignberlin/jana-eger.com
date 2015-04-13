@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.jana-eger\.com$ [NC]
+RewriteRule ^(.*)$ http://jana-eger.com/$1 [L,R=301]
+
+ErrorDocument 400 /index.html
+ErrorDocument 401 /index.html
+ErrorDocument 402 /index.html
+ErrorDocument 403 /index.html
+ErrorDocument 404 /index.html
+ErrorDocument 500 /index.html
